@@ -1,0 +1,28 @@
+
+body{
+    background-position:left top;
+    background-repeat:no-repeat;
+    height:auto;
+    width:auto;
+}
+.basic{
+    z-index:0;
+    position : absolute;
+}
+.imgTxt{
+    z-index:1;
+    position : absolute;
+    font-size: 30px;
+    font-family: Microsoft JhengHei;
+    text-align: center;
+    color: #FFFFFF;
+    width:300px;
+}
+.fit { /* set relative picture size */
+    max-width: 100%;
+    max-height: 100%;
+}
+.center {
+    display: block;
+    margin: auto;
+}
