@@ -1,7 +1,7 @@
 
 //global variable
 var myLangArray; //language array
-var commonPath = "web/img/";
+var commonPath = "img/";
 var lan_index = 0;
 // element of bg
 var eShadow, eStaBar;

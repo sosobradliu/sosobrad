@@ -1,7 +1,3 @@
-
-//global variable
-var myLangArray; //language array
-var commonPath = "web/img/";
 // element of bg
 var eShadow, eStaBar;
 // element of button
@@ -12,6 +8,12 @@ document.body.style.backgroundImage = "url("+commonPath+"bg.png)";
 
 getEleID();
 setEleImage();
+setEleTouchEvent();
+
+function initialBody() {
+//    setEleTouchEvent();
+//    setLang(lan_index);
+}
 
 function getEleID(){
     eShadow = document.getElementById("shadow");

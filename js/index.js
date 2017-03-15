@@ -3,6 +3,7 @@ var eNavi, eRadio, eBt, eLink, eMedia, eSet;
 // element of text
 var eTxtNavi, eTxtRadio, eTxtBt, eTxtLink, eTxtMedia, eTxtSet;
 
+getDevice();
 getEleID();
 setEleImage();
 
