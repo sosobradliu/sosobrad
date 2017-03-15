@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>HTML5 Media</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,target-densityDpi=device-dpi">
+    <link rel="stylesheet" href="web/css/common.css">
+    <link rel="stylesheet" href="web/css/loading.css">
+</head>
+<body onload="initialBody()">
+    <!--shadow-->
+    <div>
+        <img id="shadow" class="bg"
+             style=" top:0px; left:0px;">
+    </div>
+    <!--status bar-->
+    <div>
+        <img id="status" class="basic"
+             style=" top:0px; left:0px;">
+    </div>
+    <!--audio-->
+    <div>
+        <img id="main_Audio" class="basic" onclick="btnAudio_u()" 
+             onmouseout="btnAudio_n()" onmousedown="btnAudio_p()" onmouseup="btnAudio_n()"
+            style=" top:54px; left:12px;">
+        <a  id="txt_Audio" class="imgTxt MainMedia" onclick="btnAudio_u()" 
+             onmouseout="btnAudio_n()" onmousedown="btnAudio_p()" onmouseup="btnAudio_n()"
+            style=" top:312px; left:12px;"></a>
+        <a  id="txt_Audio_number" class="imgTxt MainMedia" onclick="btnAudio_u()" 
+             onmouseout="btnAudio_n()" onmousedown="btnAudio_p()" onmouseup="btnAudio_n()"
+            style=" top:442px; left:12px;"></a>
+    </div>
+    <!--pic-->
+    <div>
+        <img id="main_Pic" class="basic" onclick="btnPic_u()" 
+             onmouseout="btnPic_n()" onmousedown="btnPic_p()" onmouseup="btnPic_n()"
+            style=" top:54px; left:347px;">
+        <a  id="txt_Pic" class="imgTxt MainMedia" onclick="btnPic_u()" 
+             onmouseout="btnPic_n()" onmousedown="btnPic_p()" onmouseup="btnPic_n()"
+            style=" top:312px; left:347px;"></a>
+        <a  id="txt_Pic_number" class="imgTxt MainMedia" onclick="btnPic_u()" 
+             onmouseout="btnPic_n()" onmousedown="btnPic_p()" onmouseup="btnPic_n()"
+            style=" top:442px; left:347px;"></a>
+    </div>
+    <!--video-->
+    <div>
+        <img id="main_Video" class="basic" onclick="btnVideo_u()" 
+             onmouseout="btnVideo_n()" onmousedown="btnVideo_p()" onmouseup="btnVideo_n()"
+            style=" top:54px; left:682px;">
+        <a  id="txt_Video" class="imgTxt MainMedia" onclick="btnVideo_u()" 
+             onmouseout="btnVideo_n()" onmousedown="btnVideo_p()" onmouseup="btnVideo_n()"
+            style=" top:312px; left:682px;"></a>
+        <a  id="txt_Video_number" class="imgTxt MainMedia" onclick="btnVideo_u()" 
+             onmouseout="btnVideo_n()" onmousedown="btnVideo_p()" onmouseup="btnVideo_n()"
+            style=" top:442px; left:682px;"></a>
+    </div>
+    <!--audioType-->
+    <div>
+        <img id="audioType" class="basic"
+             style=" top:553px; left:20px;">
+    </div>
+    <!--Home-->
+    <div>
+        <img id="home" class="basic" onclick="btnHome_u()"
+             onmouseout="btnHome_n()"  onmousedown="btnHome_p()" onmouseup="btnHome_n()"
+             style=" top:554px; left:894px;">
+    </div>
+    
+    <div id="loading">
+        <img id="img_loading" class="loadbg" >
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+
+    <script src="web/js/common.js"></script>
+    <script src="web/js/language_media.js"></script>
+    <script src="web/js/media.js"></script> 
+</body>
+</html>

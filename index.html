@@ -4,14 +4,22 @@
     <title>HTML5 Test</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="initial-scale=1.0,width=device-width ,user-scalable=yes,target-densityDpi=device-dpi" />
-    <link rel="stylesheet" href="../web/css/index.css">
+    <link rel="stylesheet" href="web/css/common.css">
 </head>
-<body onload="initialBody()">
-    <!--status bar
-    -->
+<body class="disScroll" onload="initialBody()">
+    <!--shadow-->
+    <div>
+        <img id="shadow" class="bg"
+             style=" top:0px; left:0px;">
+    </div>
+    <!--status bar-->
+    <div>
+        <img id="status" class="basic"
+             style=" top:0px; left:0px;">
+    </div>
     <!--navi-->
     <div>
-        <img id="navi" class="basic" 
+        <img id="navi" class="basic" onclick="btnNavi_u()"
              onmouseout="btnNavi_n()" onmousedown="btnNavi_p()" onmouseup="btnNavi_n()"
             style=" top:54px; left:12px;">
         <a  id="txt_navi" class="imgTxt"
@@ -20,47 +28,63 @@
     </div>
     <!--radio-->
     <div>
-        <img id="radio" class="basic" onclick="btnRadio()"
+        <img id="radio" class="basic" onclick="btnRadio_u()"
+             onmouseout="btnRadio_n()" onmousedown="btnRadio_p()" onmouseup="btnRadio_n()"
             style=" top:301px;left:12px;">
-        <a  id="txt_radio" class="imgTxt" onclick="btnRadio()"
+        <a  id="txt_radio" class="imgTxt" onclick="btnRadio_u()"
+             onmouseout="btnRadio_n()" onmousedown="btnRadio_p()" onmouseup="btnRadio_n()"
             style=" top:478px; left:24px;"></a>
     </div>
     <!--bt-->
     <div>
-        <img id="bt" class="basic"
+        <img id="bt" class="basic" onclick="btnBt_u()"
+             onmouseout="btnBt_n()" onmousedown="btnBt_p()" onmouseup="btnBt_n()"
             style=" top:54px; left:347px;">
-        <a  id="txt_bt" class="imgTxt"
+        <a  id="txt_bt" class="imgTxt" onclick="btnBt_u()"
+             onmouseout="btnBt_n()" onmousedown="btnBt_p()" onmouseup="btnBt_n()"
             style=" top:231px; left:362px;"></a>
     </div>
     <!--link-->
     <div>
-        <img id="link" class="basic" onclick="urlLink()"
-             onmouseout="btnLink_n()" onmousedown="btnLink_p()" onmouseup="btnLink_n()"
+        <img id="link" class="basic" onclick="btnLink()"
             style=" top:301px;left:347px;">
-        <a  id="txt_link" class="imgTxt" onclick="urlLink()"
-             onmouseout="btnLink_n()" onmousedown="btnLink_p()" onmouseup="btnLink_n()"
+        <a  id="txt_link" class="imgTxt" onclick="btnLink()"
             style=" top:478px; left:362px;"></a>
     </div>
     <!--media-->
     <div>
-        <img id="media" class="basic" onclick="urlMedia()" 
+        <img id="media" class="basic"  onclick="btnMedia_u()"
              onmouseout="btnMedia_n()" onmousedown="btnMedia_p()" onmouseup="btnMedia_n()"
              style=" top:54px; left:682px;" >
-        <a id="txt_media" class="imgTxt" onclick="urlMedia()"
-           onmouseout="btnMedia_n()" onmousedown="btnMedia_p()" onmouseup="btnMedia_n()"
+        <a id="txt_media" class="imgTxt" onclick="btnMedia_u()"
+             onmouseout="btnMedia_n()" onmousedown="btnMedia_p()" onmouseup="btnMedia_n()"
            style=" top:231px; left:700px;"></a>
     </div>
     <!--setting-->
     <div>
-        <img id="setting" class="basic" onclick="btnSet()" 
-           onmouseout="btnSetting_n()" onmousedown="btnSetting_p()" onmouseup="btnSetting_n()"
+        <img id="setting" class="basic" onclick="btnSet_u()" 
+           onmouseout="btnSet_n()" onmousedown="btnSet_p()" onmouseup="btnSet_n()"
             style=" top:301px;left:682px;">
-        <a  id="txt_set" class="imgTxt" onclick="btnSet()"
-           onmouseout="btnSetting_n()" onmousedown="btnSetting_p()" onmouseup="btnSetting_n()"
+        <a  id="txt_set" class="imgTxt" onclick="btnSet_u()"
+           onmouseout="btnSet_n()" onmousedown="btnSet_p()" onmouseup="btnSet_n()"
             style=" top:478px; left:700px;"></a>
     </div>
+    <!--audioType-->
+    <div>
+        <img id="audioType" class="basic"
+             style=" top:553px; left:20px;">
+    </div>
     
-    <script src="../web/js/language_main.js"></script> 
-    <script src="../web/js/index.js"></script>
+    <script src="web/js/common.js"></script>
+    <script src="web/js/language_main.js"></script>
+    <script src="web/js/index.js"></script> 
+<!--
+    <script src="/js/touch-emulator.js"></script>
+    <script> TouchEmulator(); </script>
+-->
+<!--
+    <script src="/js/hammer.js"></script>
+    <script src="/js/hammer-time.js"></script>
+-->
 </body>
 </html>
