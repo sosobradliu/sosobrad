@@ -52,23 +52,34 @@ function setEleImage(){
 function setEleTouchEvent(){
     eNavi.addEventListener("touchstart", btnNavi_p, false);
     eNavi.addEventListener("touchend", btnNavi_n, false);
+    eTxtNavi.addEventListener("touchstart", btnNavi_p, false);
+    eTxtNavi.addEventListener("touchend", btnNavi_n, false);
 
     eRadio.addEventListener("touchstart", btnRadio_p, false);
     eRadio.addEventListener("touchend", btnRadio_n, false);
+    eTxtRadio.addEventListener("touchstart", btnRadio_p, false);
+    eTxtRadio.addEventListener("touchend", btnRadio_n, false);
 
+//    eBt.addEventListener("mousedown", btnBt_p, false);
+//    eBt.addEventListener("mouseup", btnBt_n, false);
+//    eBt.addEventListener("onmousemove", noMove, false);
     eBt.addEventListener("touchstart", btnBt_p, false);
     eBt.addEventListener("touchend", btnBt_n, false);
+    eTxtBt.addEventListener("touchstart", btnBt_p, false);
+    eTxtBt.addEventListener("touchend", btnBt_n, false);
 
     eMedia.addEventListener("touchstart", btnMedia_p, false);
     eMedia.addEventListener("touchend", btnMedia_n, false);
 //    eMedia.addEventListener("touchend", MEDIA, false);
 //    eMedia.addEventListener("touchcancel", MEDIA, false);
+    eTxtMedia.addEventListener("touchstart", btnMedia_p, false);
+    eTxtMedia.addEventListener("touchend", btnMedia_n, false);
 
     eSet.addEventListener("touchstart", btnSet_p, false);
     eSet.addEventListener("touchend", btnSet_n, false);
-    
-    window.addEventListener('touchmove', noMove, false);
-    
+    eTxtSet.addEventListener("touchstart", btnSet_p, false);
+    eTxtSet.addEventListener("touchend", btnSet_n, false);
+
 }
 
 // language

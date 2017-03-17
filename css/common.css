@@ -46,6 +46,7 @@ body{
     width:330px;
 }
 .center {
+    z-index:10;
     display: block;
-    margin: auto;
+    margin: auto 350px;
 }

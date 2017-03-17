@@ -25,6 +25,7 @@ function getEleID(){
     eAudiotype = document.getElementById("audioType");
     eLoading = document.getElementById("loading");
     eLoadimg = document.getElementById("img_loading");
+    showHideLoading(false);
 
     eMainAudio = document.getElementById("main_Audio");
     eMainPic = document.getElementById("main_Pic");
@@ -54,12 +55,24 @@ function setEleImage(){
 function setEleTouchEvent(){
     eMainAudio.addEventListener("touchstart", btnAudio_p, false);
     eMainAudio.addEventListener("touchend", btnAudio_n, false);
+    eTxtAudio.addEventListener("touchstart", btnAudio_p, false);
+    eTxtAudio.addEventListener("touchend", btnAudio_n, false);
+    eTxtAudioNum.addEventListener("touchstart", btnAudio_p, false);
+    eTxtAudioNum.addEventListener("touchend", btnAudio_n, false);
     
     eMainPic.addEventListener("touchstart", btnPic_p, false);
     eMainPic.addEventListener("touchend", btnPic_n, false);
+    eTxtPic.addEventListener("touchstart", btnPic_p, false);
+    eTxtPic.addEventListener("touchend", btnPic_n, false);
+    eTxtPicNum.addEventListener("touchstart", btnPic_p, false);
+    eTxtPicNum.addEventListener("touchend", btnPic_n, false);
     
     eMainVideo.addEventListener("touchstart", btnVideo_p, false);
     eMainVideo.addEventListener("touchend", btnVideo_n, false);
+    eTxtVideo.addEventListener("touchstart", btnVideo_p, false);
+    eTxtVideo.addEventListener("touchend", btnVideo_n, false);
+    eTxtVideoNum.addEventListener("touchstart", btnVideo_p, false);
+    eTxtVideoNum.addEventListener("touchend", btnVideo_n, false);
 	
     eHome.addEventListener("touchstart", btnHome_p, false);
     eHome.addEventListener("touchend", btnHome_n, false);
@@ -106,9 +119,20 @@ function setFileNum(){
     }
 }
 
-function setFileNumber(){
+function setFileNumAndClean(){
     setFileNum();
-    eLoading.style.display = "none";
+    showHideLoading(false);
+}
+
+function showHideLoading(SHOW){
+    if(SHOW){
+//        eLoading.style.display = "block";
+        eLoading.style.visibility = "visible";
+    }
+    else{
+//        eLoading.style.display = "none";
+        eLoading.style.visibility = "hidden";
+    }
 }
 
 function noMove(event){
