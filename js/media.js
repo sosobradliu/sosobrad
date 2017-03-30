@@ -157,7 +157,8 @@ function btnAudio_n() {
 }
 function btnAudio_u() {
     btnAudio_n();
-    showMessage("Audio");
+//    showMessage("Audio");
+    urlToNew("Media_Audio.html");
 }
 
 // Pic function
@@ -197,7 +198,8 @@ function btnVideo_n() {
 }
 function btnVideo_u() {
     btnAudio_n();
-    showMessage("Video");
+//    showMessage("Video");
+    urlToNew("Media_Video.html");
 }
 
 // Home function

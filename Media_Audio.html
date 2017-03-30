@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Video</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <style type="text/css">
+        /* list */
+        .list_area{
+            position : absolute;
+            display: inline-block;
+            overflow-y: scroll;
+            /*            top: 2.75em;
+                        left: 0.6em;
+                        max-height:24.45em;
+                        max-width: 48.5em;
+                        height:24.45em;
+                        width: 48.5em;*/
+            top: 54px;
+            left: 14px;
+            height: 490px;
+            width: 940px;
+        }
+        .list_area::-webkit-scrollbar{/*Chrome & Safari- invisible scrollbar*/
+            /*display: none;*/
+            width: 14px;
+        }
+        .list_area::-webkit-scrollbar-button{
+            display: none;
+        }
+        .list_area::-webkit-scrollbar-track {
+            background-image: url(img/ScrollBar_normal.png);
+            background-repeat: no-repeat, repeat-y;
+            background-position: bottom left, 0 0;
+        }
+        ::-webkit-scrollbar-track-piece{ }
+        .list_area::-webkit-scrollbar-thumb {
+            background-image: url(img/ScrollBar_Display.png);
+            background-repeat: no-repeat, repeat-y;
+        }
+        .list_area::-webkit-scrollbar-corner{
+            display: none;
+        }
+
+        ul{
+            list-style-type: none;
+            /*height: 25.4em;*/
+        }
+        li{
+            background-image: url(img/media_list_normal.png);
+            background-repeat: no-repeat;
+            /*            margin-top: -1em;
+                        margin-left: -2em;
+                        height: 4em;*/
+            margin-top: -20px;
+            margin-left: -36px;
+            height: 80px;
+        }
+        li:hover{
+            /*background-image: url(img/img_bg_loading_f.png);*/
+        }
+        li:active{
+            background-image: url(img/media_list_pressed.png);
+        }
+        .listTxt{
+            z-index:2;
+            position: absolute;
+            font-family: Microsoft JhengHei;
+            font-size: 2em;
+            color: #FFFFFF;
+            width: 865px;
+            margin-left: 1em;
+            text-align: left;
+            white-space: nowrap;/*single line*/
+            overflow:hidden;
+        }
+        .listTxtmoble{
+            z-index:2;
+            position: absolute;
+            font-family: Microsoft JhengHei;
+            font-size: 2em;
+            color: #FFFFFF;
+            width: 865px;
+            margin-top: 7px;
+            margin-left: 1em;
+            text-align: left;
+            white-space: nowrap;/*single line*/
+            overflow:hidden;
+        }
+        /*.listTxt:hover{
+            color: #FFFF00;
+        }*/
+    </style>
+</head>
+<body onload="initialBody(0)">
+    <!--shadow-->
+    <div>
+        <img id="shadow" class="bg"
+             style=" top:0px; left:0px;">
+    </div>
+    <!--status bar-->
+    <div>
+        <img id="status" class="basic"
+             style=" top:0px; left:0px;">
+    </div>
+    <!--back-->
+    <div>
+        <img id="back" class="basic" onclick="btnBack_u()"
+             onmouseout="btnBack_n()"  onmousedown="btnBack_p()" onmouseup="btnBack_n()"
+             style=" top:554px; left:758px;">
+    </div>
+    <!--Home-->
+    <div>
+        <img id="home" class="basic" onclick="btnHome_u()"
+             onmouseout="btnHome_n()"  onmousedown="btnHome_p()" onmouseup="btnHome_n()"
+             style=" top:554px; left:894px;">
+    </div>
+    <div class="list_area" dir="rtl">
+        <div id="list_area" dir="ltr" >
+            <ul id="list_ul"> </ul>
+        </div>
+    </div>
+    <div>
+        <img id="rightbar" class="basic"
+            style=" top:54px; left:955px;">
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/media_sub.js"></script> 
+</body>
+</html>

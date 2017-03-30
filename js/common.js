@@ -1,6 +1,7 @@
 
 //global variable
 var myLangArray; //language array
+var listArray;
 var commonPath = "img/";
 var lan_index = 0;
 // element of bg
@@ -41,6 +42,10 @@ function gotoNewPage(newURL){
 // get file number function
 function getAllFiles(){
     window.AndroidJS.getAllFiles();
+}
+
+function getFileNameArray(type){
+    return window.AndroidJS.getFileNameArray(type);
 }
       
 // Android control
