@@ -3,7 +3,8 @@
     z-index:10;
     position: absolute;
     display: block;
-    margin: 0 auto;
+	left: 50%;
+    margin: -5px -50px ;
 }
 .sk-circle {
     z-index:10;

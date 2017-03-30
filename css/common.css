@@ -36,17 +36,17 @@ body{
 .imgTxt{
     z-index:1;
     position : absolute;
-    font-size: 30px;
+    font-size: 2em;
     font-family: Microsoft JhengHei;
     text-align: center;
     color: #FFFFFF;
-    width:300px;
+    width:7.4em;
 }
 .MainMedia{
-    width:330px;
+    width:9em;
 }
 .center {
     z-index:10;
     display: block;
-    margin: auto 350px;
+    margin: auto 8.5em;
 }
