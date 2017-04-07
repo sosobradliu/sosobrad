@@ -142,7 +142,8 @@ function btnNavi_n() {
 }
 function btnNavi_u(){
     btnNavi_n();
-    gotoNew("https://www.google.com.tw/maps/@23.4762725,120.8210213,7z?hl=zh-TW");
+//    gotoNew("https://www.google.com.tw/maps/@23.4762725,120.8210213,7z?hl=zh-TW");
+    urlToNew("Map.html");
 }
 
 //Radio function
